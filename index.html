@@ -69,11 +69,11 @@
 
       var marker = L.marker([row.Latitude, row.Longitude], {
         opacity: 1,
-          // Custom icon
-          icon: L.icon({
-          iconUrl:  'icons/sq_holding_nut_200px.png',
-          iconSize: [40, 60] })
-      }).bindPopup("This squirrel right here was: "+row.Age+" and "+row.Title);
+        icon: L.icon({
+        iconUrl:
+        'icons/sq_holding_nut_200px.png,'
+        iconSize: [40,60]})
+      }).bindPopup("This squirrel right here was:"+row.Age +"and"+row.Title);
       
       marker.addTo(map);
     }

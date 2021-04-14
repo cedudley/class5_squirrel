@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <title>leaflet-map-csv</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
@@ -23,7 +24,7 @@
 <body>
 
   <!-- Insert HTML division tag to layout the map -->
-  <div id="map"></div>
+  <div id='map'></div>
 
   <!-- Insert Javascript (.js) code to create the map -->
   <script>
@@ -70,10 +71,10 @@
       var marker = L.marker([row.Latitude, row.Longitude], {
         opacity: 1,
         icon: L.icon({
-        iconUrl:
-        'icons/sq_holding_nut_200px.png,'
+        iconUrl: 'icons/sq_holding_nut_200px.png,',
         iconSize: [40,60]})
-      }).bindPopup("This squirrel right here was:"+row.Age +"and"+row.Title+"<p><img src='images/sq_classic.jpeg' width='300px'></p>");
+      }).bindPopup("This squirrel right here was: "+row.Age+" and "+row.Title+"<p> <img src='images/sq_hihoney.jpeg' width='300px'> </p>");  // RD added "s" to folder name here
+      // also re-created folders and re-uploaded images as there seemed to be a glitch
       
       marker.addTo(map);
     }
